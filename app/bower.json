@@ -1,0 +1,20 @@
+{
+  "name": "CheckboxTree",
+  "homepage": "https://github.com/cmosnick/CheckboxTree",
+  "authors": [
+    "cmosnick <cmosnick07@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "xstyle": "^0.3.2"
+  }
+}

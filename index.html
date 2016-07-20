@@ -10,9 +10,13 @@
                         {
                             name: "app",
                             location: location.pathname.replace(/\/[^/]+$/, "") + "/app"
-                        }
-                    ],
-                    deps: ['xstyle/main']
+                        },
+                        {
+                            name: "xstyle",
+                            location: location.pathname.replace(/\/[^/]+$/, "") + "/app/bower_components/xstyle"
+                        },
+                    ]/*,
+                    deps: ['xstyle/main']*/
                 };
         </script>
         <script type="text/javascript" src="app/js/dojo/dojo.js"></script>
