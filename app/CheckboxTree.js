@@ -12,7 +12,7 @@ define([
 	'dojo/dom-attr',
 	'dojo/_base/array',
 
-	'xstyle!./css/checkboxTree.css'
+	'xstyle/css!./css/checkboxTree.css'
 ], function(
 	declare, 
 	lang,

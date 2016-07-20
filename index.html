@@ -5,16 +5,17 @@
         <script type="text/javascript">
             var dojoConfig = {
                     async: true,
-                    paresOnLoad: true,
+                    parseOnLoad: true,
                     packages: [
                         {
                             name: "app",
                             location: location.pathname.replace(/\/[^/]+$/, "") + "/app"
                         }
-                    ]
+                    ],
+                    deps: ['xstyle/main']
                 };
         </script>
-        <script type="text/javascript" src="http://js.arcgis.com/3.15/" data-dojo-config=""></script>
+        <script type="text/javascript" src="app/js/dojo/dojo.js"></script>
     </head>
 
     <body class="claro">
