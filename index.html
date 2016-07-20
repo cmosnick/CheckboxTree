@@ -4,20 +4,19 @@
         <title>Checkbox Tree Demo</title>
         <script type="text/javascript">
             var dojoConfig = {
-                    async: true,
-                    parseOnLoad: true,
-                    packages: [
-                        {
-                            name: "app",
-                            location: location.pathname.replace(/\/[^/]+$/, "") + "/app"
-                        },
-                        {
-                            name: "xstyle",
-                            location: location.pathname.replace(/\/[^/]+$/, "") + "/app/bower_components/xstyle"
-                        },
-                    ]/*,
-                    deps: ['xstyle/main']*/
-                };
+                async: true,
+                parseOnLoad: true,
+                packages: [
+                    {
+                        name: "app",
+                        location: location.pathname.replace(/\/[^/]+$/, "") + "/app"
+                    },
+                    {
+                        name: "xstyle",
+                        location: location.pathname.replace(/\/[^/]+$/, "") + "/app/bower_components/xstyle"
+                    },
+                ]
+            };
         </script>
         <script type="text/javascript" src="app/js/dojo/dojo.js"></script>
     </head>
