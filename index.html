@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkbox Tree Demo</title>
+        <script type="text/javascript">
+            var dojoConfig = {
+                    async: true,
+                    paresOnLoad: true,
+                    packages: [
+                        {
+                            name: "app",
+                            location: location.pathname.replace(/\/[^/]+$/, "") + "/app"
+                        }
+                    ]
+                };
+        </script>
+        <script type="text/javascript" src="http://js.arcgis.com/3.15/" data-dojo-config=""></script>
+    </head>
+
+    <body class="claro">
+        <div id="cbTreeDiv" data-dojo-attach-point="cbTreeDiv"></div>
+
+
+        <script type="text/javascript">
+        require([
+            'dojo/dom',
+            'app/CheckboxTree.js', 
+            'dojo/domReady!'
+        ], function(dom, CheckboxTree) {
+            var cbTree = new CheckboxTree(this.cbTreeDiv);
+
+            // Add item on first level of heierarchy
+            var item = cbTree.addItem("item 1");
+            cbTree.addItem("child 1", item);
+            cbTree.addItem("child 2", item);
+            cbTree.addItem("child 3", item);
+
+            var item2 = cbTree.addItem("item 2");
+            child = cbTree.addItem("child 1", item2);
+            cbTree.addItem("child 2", item2);
+
+        });
+        </script>
+    </body>
+</html>

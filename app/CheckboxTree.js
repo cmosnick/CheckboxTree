@@ -43,6 +43,9 @@ define([
 		constructor: function (domNode) {
 			this.domNode = domNode;
 			this.hierarchy.domNode = domNode;
+			if(dojoQuery("ul", domNode).length == 0){
+				domConstruct.create("ul", {style: {"list-style-type": "none"}, class : "collapsible-list-0"}, domNode, "first");
+			}
 		},
 
 		addItem: function (itemLabel, parent) {
