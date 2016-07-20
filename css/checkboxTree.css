@@ -1,0 +1,15 @@
+span.icon-arrow {
+ width: 15px;
+ height: 15px;
+ background-size: 15px 15px;
+ float: left;
+ margin-right: 5px; 
+}
+
+span.icon-arrow-open {
+  background-image: url('../images/arrow-open.png');
+}
+
+span.icon-arrow-closed {
+  background-image: url('../images/arrow-closed.png');
+}
